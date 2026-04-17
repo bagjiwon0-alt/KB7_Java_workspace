@@ -1,4 +1,4 @@
-package main.java.ch01_variable_type_operator.basic.ch04.sec02;
+package ch01_variable_type_operator.basic.ch04.sec02;
 
 public class PrintFromTo10Example {
     public static void main(String[] args) {

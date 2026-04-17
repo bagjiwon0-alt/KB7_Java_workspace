@@ -1,4 +1,4 @@
-package main.java.ch01_variable_type_operator.basic.ch01.sec09;
+package ch01_variable_type_operator.basic.ch01.sec09;
 
 // alt + shift + 방향키(위/아래) : 라인이동
 // alt + 1 : 패키지 구조 이동

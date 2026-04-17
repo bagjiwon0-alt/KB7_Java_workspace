@@ -1,4 +1,6 @@
-package main.java.ch02_conditional_loop_reference.basic.ch06.sec01;
+package ch02_conditional_loop_reference.basic.ch06.sec01;
+
+import java.util.Scanner;
 
 public class ArrayExample2 {   // 예제 작성용 클래스
     public void ex1() {
@@ -20,6 +22,8 @@ public class ArrayExample2 {   // 예제 작성용 클래스
         }
 
         // 향상된 for문으로 값 출력하기
+        // 작성법 : for(자료형 변수명 : 배열또는 컬랙션명) {}
+        // -> index가 필요한 경우에는 일반 for문 사용이 편함
         int i = 0;
         for (int number : arr) {
             System.out.printf("arr[%d] : %d\n",i,number);
@@ -29,11 +33,38 @@ public class ArrayExample2 {   // 예제 작성용 클래스
     }
 
     public void ex2() {
-        System.out.println("apdfj");
+
+        Scanner sc = new Scanner(System.in);
         // 숙제
         // 입력 받은 양의 정수 만큼의
         // 크기를 가지는 배열 만들기
 
+        System.out.print("입력 받을 인원 수 : ");
+        int num = sc.nextInt();     // 정수입력
+
+        int[] scoreArr = new int[num];
+
+        int sum = 0;
+        double mean = 0;
+
+        for (int i = 0; i < scoreArr.length; i++) {
+            System.out.printf("%d번 점수 입력 : ", i+1);
+            scoreArr[i] = sc.nextInt();
+            // 입력받은 정수를 배열 요소에 저장
+            sum += scoreArr[i];
+//            for (int x : scoreArr) {
+//                System.out.println(x);
+//            }
+        }
+        mean = (double) sum / num;
+        System.out.printf("합계 : %d 점", sum);
+        System.out.println();
+        System.out.printf("평균 : %f 점", mean);
+
+//            for (int j = 0; j < i+1; j++) {
+//            System.out.printf("%d번 점수: %d",j+1, scoreArr[j]);
+//                System.out.println();
+//            }
         // [평균 점수 구하기]
         // 입력 받을 인원 수 : 4
         // 1번 점수 입력 : 100
@@ -44,6 +75,38 @@ public class ArrayExample2 {   // 예제 작성용 클래스
         // 합계 : 260 점
         // 평균 : 65 점
         //-----------------------------------
+//        for (int i = 0; i < num; i++) {
+//            System.out.printf("%d번 점수 입력 : ", i+1);
+//            int score = sc.nextInt();
+//            int[] oldarr = {score};
+//            int[] newarr = new int[oldarr.length+1];
+//            for (int j = 0; j < oldarr.length; j++) {
+//                newarr[j] = oldarr[j];
+//            }
+//        }
+
+    }
+
+    public void ex3(){
+        // 저녁 메뉴 뽑기
+
+        // 배열 선언과 동시에 초기화
+        String[] menu = {"햄버거", "돈까스", "고기", "초코파이", "몽쉘", "버터링"};
+
+        // 난수를 발생시켜서 메뉴 출력하기
+
+        int random = (int) (Math.random()*6);
+        // 0.0 <= x < 1.0
+        // 0.0 <= x * 6 < 6.0
+        // 0 <= int(x * 6) < 6
+
+        System.out.println(random);
+        System.out.println("저녁 메뉴 추천: "+ menu[3]);
+
+
+
+
+
     }
 
 }

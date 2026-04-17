@@ -1,4 +1,4 @@
-package main.java.ch01_variable_type_operator.basic.ch02.sec06;
+package ch01_variable_type_operator.basic.ch02.sec06;
 
 public class StringExample {
     public static void main(String[] args) {

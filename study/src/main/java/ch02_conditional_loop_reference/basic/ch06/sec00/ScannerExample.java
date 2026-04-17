@@ -1,4 +1,5 @@
-package main.java.ch02_conditional_loop_reference.basic.ch06.sec00;
+package ch02_conditional_loop_reference.basic.ch06.sec00;
+
 
 import java.util.Scanner;
 

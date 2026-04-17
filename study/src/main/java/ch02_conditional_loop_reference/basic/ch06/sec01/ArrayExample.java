@@ -1,4 +1,4 @@
-package main.java.ch02_conditional_loop_reference.basic.ch06.sec01;
+package ch02_conditional_loop_reference.basic.ch06.sec01;
 
 public class ArrayExample {
         /* 배열(Array)

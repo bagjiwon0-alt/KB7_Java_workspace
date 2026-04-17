@@ -1,4 +1,4 @@
-package main.java.ch01_variable_type_operator.basic.ch02.sec08;
+package ch01_variable_type_operator.basic.ch02.sec08;
 
 public class CastingExample {
 

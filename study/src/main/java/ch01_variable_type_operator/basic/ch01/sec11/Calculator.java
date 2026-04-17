@@ -1,4 +1,4 @@
-package main.java.ch01_variable_type_operator.basic.ch01.sec11;
+package ch01_variable_type_operator.basic.ch01.sec11;
 
 public class Calculator {
 
