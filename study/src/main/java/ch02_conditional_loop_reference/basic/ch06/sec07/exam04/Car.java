@@ -8,20 +8,20 @@ public class Car {
     int maxSpeed;
 
     public Car(){
-        System.out.println(this.company);
+//        System.out.println(this.company);
     }
     public Car(String model){
-        System.out.println(this.company);
+//        System.out.println(this.company);
         this.model = model;
     }
     public Car(String model,String color){
-        System.out.println(this.company);
+//        System.out.println(this.company);
         this.model = model;
         this.color = color;
 
     }
     public Car(String model,String color,int maxSpeed){
-        System.out.println(this.company);
+//        System.out.println(this.company);
         this.model = model;
         this.color = color;
         this.maxSpeed = maxSpeed;
