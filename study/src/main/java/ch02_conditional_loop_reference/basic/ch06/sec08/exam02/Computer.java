@@ -1,7 +1,7 @@
 package ch02_conditional_loop_reference.basic.ch06.sec08.exam02;
 
 public class Computer {
-    int[] list;
+//    int[] list;           이거 필요업서
 
     public int sum(int a, int b, int c){
         return a+b+c;
@@ -10,7 +10,11 @@ public class Computer {
         return a+b+c+d+e;
     }
     public int sum(int[] list){
-        return a+b+c+d+e;
+        int sum = 0;
+        for (int i = 0; i < list.length; i++) {
+            sum += list[i];
+        }
+        return sum;
     }
 
 
