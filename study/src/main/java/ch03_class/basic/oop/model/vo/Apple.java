@@ -49,5 +49,11 @@ public class Apple extends Phone{
 //        return super.toString() + "/" + iosVersion;
 //        return getModel() + "/" + getColor() + "/" + iosVersion;
         return super.toString() + "/" + iosVersion;     // super. : 참조변수(주소)
+
+        }
+
+    @Override
+    public void pay(){
+            System.out.println("애플페이로 결제하기");
     }
 }

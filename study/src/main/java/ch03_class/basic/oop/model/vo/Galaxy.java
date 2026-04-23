@@ -47,4 +47,9 @@ public class Galaxy extends Phone {
 
     }
 
+    @Override
+    public String toString(){
+        return super.toString() + '/' + this.foldable;
+    }
+
 }

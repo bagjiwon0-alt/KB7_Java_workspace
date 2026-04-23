@@ -1,7 +1,7 @@
 package ch03_class.basic.ch07.sec04.exam02;
 
 public class SupersonicAirplane extends Airplane {
-    public static final int NORMAL = 1;
+    public static final int NORMAL = 1;     // final: 변경불가
     public static final int SUPERSONIC = 2;
     public int flyMode = NORMAL;
     @Override
