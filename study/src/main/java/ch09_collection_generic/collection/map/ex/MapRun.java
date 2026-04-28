@@ -1,0 +1,10 @@
+package ch09_collection_generic.collection.map.ex;
+
+public class MapRun {
+    public static void main(String[] args) {
+        MapEx map = new MapEx();
+//        map.ex1();
+//        map.ex2();
+        map.ex3();
+    }
+}

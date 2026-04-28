@@ -98,8 +98,13 @@ public class ListEx {
         list.add("치즈케이크");
         // list.add(500);      // String 타입이 아니여서 에러 발생
 
+//        list.set(1, "과자");
+        System.out.println(list);
+        System.out.println(list.set(1, "과자"));
+        System.out.println(list);
+
+
 
     }
-
 
 }  // class
