@@ -105,6 +105,8 @@ public class MapEx {
             list.add(map);
         }
 
+
+        System.out.println(list);
         // for문 종료시 List에는 10개의 map객체가 추가되어 있음
         // List에 저장된 Map에서 key가 "id"인 경우의 value를 모두 출력
 //        System.out.println(list);

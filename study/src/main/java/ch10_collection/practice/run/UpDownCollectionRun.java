@@ -1,0 +1,11 @@
+package ch10_collection.practice.run;
+
+import ch10_collection.practice.model.service.MainService;
+
+public class UpDownCollectionRun {
+    public static void main(String[] args) {
+        MainService service = new MainService();
+
+        service.displayMenu();
+    }
+}
