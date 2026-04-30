@@ -18,7 +18,7 @@ public class LoginService {
         if (loginMember.getHighScore() == 0) {
             score = 1000;
             loginMember.setHighScore(score);
-            System.out.println(loginMember.getHighScore());
+//            System.out.println(loginMember.getHighScore());
         } else {
             score = loginMember.getHighScore();
         }
