@@ -61,7 +61,7 @@ public class MainService {
 					System.out.println("2. 내 정보 조회");
 					System.out.println("3. 전체 회원 조회");
 					System.out.println("4. 비밀번호 변경");
-					System.out.println("9. 로그아웃");
+					System.out.println("5. 로그아웃");
 					System.out.println("메뉴 선택 >> ");
 					
 					menu = sc.nextInt();
@@ -76,7 +76,7 @@ public class MainService {
 					case 3: loginService.selectAllMember(members); break;
 					case 4: loginService.updatePassword(loginMember); break;
 					
-					case 9 : System.out.println("[로그아웃 되었습니다.]"); 
+					case 5 : System.out.println("[로그아웃 되었습니다.]");
 							 loginMember = null; // loginMember 필드에 아무것도 참조하고 있지 않음을 의미하는 null을 대입
 							 break;
 					
