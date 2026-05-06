@@ -12,7 +12,8 @@ public class Person {
 
     // Speakable 인터페이스를 매개변수로
     public void action2(Speakable speakable) {
-        speakable.speak("안녕하세요");
+        String str = "안녕하세요";
+        speakable.speak(str);
     }
 
 }
