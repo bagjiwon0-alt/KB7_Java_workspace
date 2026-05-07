@@ -2,6 +2,7 @@ package ch12_stream.basic.ch17.sec03;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamPipeLineExample {
@@ -12,6 +13,10 @@ public class StreamPipeLineExample {
                 new Student("유미선", 30)
         );
 
-        Stream<>
+        Stream<Student> stringStream = list.stream();
+        IntStream intStream = stringStream.mapToInt(stdt -> stdt.getScore());
+        double avg = intStream.average().getAsDouble();
+
+        System.out.println("평균 점수: " + avg);
     }
 }
